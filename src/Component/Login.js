@@ -16,6 +16,7 @@ import {
   Checkbox,
   Button,
   Container,
+  InputLabel,
 } from '@mui/material';
 // import {Redirect} from 'react-router-dom';
 const SignInSide = () => {
@@ -120,11 +121,11 @@ const SignInSide = () => {
                 <Typography variant="h6" align="left" margin="dense">
                   Create an account
                 </Typography>
+                <InputLabel>Email</InputLabel>
                     <TextField
                       required
                       id="email"
                       name="email"
-                      label="Email"
                       fullWidth
                       margin="dense"
                       {...register('email')}
@@ -133,11 +134,11 @@ const SignInSide = () => {
                     <Typography variant="inherit" color="error">
                       {errors.email?.message}
                     </Typography>
+                    <InputLabel>Password</InputLabel>
                     <TextField
                       required
                       id="password"
                       name="password"
-                      label="Password"
                       type="password"
                       fullWidth
                       margin="dense"
@@ -147,11 +148,11 @@ const SignInSide = () => {
                     <Typography variant="inherit" color="error">
                       {errors.password?.message}
                     </Typography>
+                    <InputLabel>Confirm Password</InputLabel>
                     <TextField
                       required
                       id="confirmPassword"
                       name="confirmPassword"
-                      label="Confirm Password"
                       type="password"
                       fullWidth
                       margin="dense"
@@ -161,11 +162,11 @@ const SignInSide = () => {
                     <Typography variant="inherit" color="error">
                       {errors.confirmPassword?.message}
                     </Typography>
+                    <InputLabel>Full Name</InputLabel>
                     <TextField
                       required
                       id="fullname"
                       name="fullname"
-                      label="Full Name"
                       fullWidth
                       margin="dense"
                       {...register('fullname')}
@@ -174,11 +175,11 @@ const SignInSide = () => {
                     <Typography variant="inherit" color="error">
                       {errors.fullname?.message}
                     </Typography>
+                    <InputLabel>Phone Number</InputLabel>
                     <TextField
                       required
                       id="phone"
                       name="phone"
-                      label="phone"
                       fullWidth
                       margin="dense"
                       {...register('phone')}
