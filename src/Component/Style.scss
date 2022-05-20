@@ -1,0 +1,28 @@
+.svg {
+  overflow: visible;
+  margin-bottom: 2rem;
+  display: block;
+}
+
+.component {
+    display: block;
+    max-width: 100%;
+    min-height: 100vh;
+    background: rebeccapurple;
+    position: relative;
+    border: 1px dashed rebeccapurple;
+      
+    &__child-element {
+      display: block;
+      width: 21rem;
+      height: 15rem;
+      padding: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+      background: white;
+    }
+  }
+
+   
